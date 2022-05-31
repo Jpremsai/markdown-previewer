@@ -1,0 +1,102 @@
+*{
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+body{
+  width: 100vw;
+  height: 100vh;
+  background-color: aquamarine;
+  overflow-x: hidden;
+}
+.Header{
+  text-align: center;
+  padding:10px;
+  background-color: rgb(3, 44, 30);
+  color: aliceblue;
+  width: 100vw;
+  margin-bottom: 20px;
+}
+.wrapper{
+  background-color: aquamarine;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100vw;
+  overflow-x: hidden;
+  margin-left: 30px;
+}
+.editor{
+  width: 40vw;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  min-height: 100vh;
+  margin: 0px 10px 10px 10px;
+  background-color: aquamarine;
+}
+textarea{
+  width: 100%;
+  min-height: 90%;
+  padding: 10px;
+  font-size: 1rem;
+}
+.toolbar{
+  background-color: aquamarine;
+  height: 50px !important;
+  width: 40vw;
+  text-align: center;
+  font-size: medium;
+  background-color: indigo;
+  color: white;
+  padding-top: 20px;
+}
+button{
+  float: right;
+}
+.previewer{
+  width: 40vw;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  min-height: 90%;
+  margin-left: 10px;
+  background-color: white;
+  float: right;
+}
+#preview{
+  margin-bottom: 30px;
+  line-height: 1.5rem;
+  width: 100%;
+  padding: 10px;
+  background-color: white;
+  min-height: 90%;
+  line-height: 2rem;
+  line-break: strict;
+}
+.editormax{
+  width: 90vw;
+  min-height: 100vh;
+  transition: width 3s;
+  margin: 20px 30px;
+}
+.previewmax{
+  width: 90vw;
+  min-height: 100vh;
+  transition: width 3s;
+}
+.toolbarmax{
+  width: 90vw;
+  background-color: aqua;
+  height: 50px !important;
+  transition: width 3s;
+  text-align: center;
+  color: white;
+  background-color: indigo;
+  font-size: 2rem;
+}
+
+@media (max-width: 900px) {
+  .wrapper{
+    flex-direction: column;
+  }
+}
+.hide{
+  display: none;
+}
